@@ -11,7 +11,7 @@ import (
 
 
 
-//Gerando um busca ip
+//A função gerar irá usar a biblioteca com os pacotes disponiveis do cli para configurar a por busca ip e servidor do website desejado
 func Gerar() *cli.App {
 
 app := cli.NewApp()
@@ -46,7 +46,7 @@ app.Commands = []cli.Command {
 
 }
 
-// A usando a funçao buscar ip
+// Criando a funçao buscar ip 
 func buscarIp(c *cli.Context) {
 	
 	host := c.String("host")
@@ -64,7 +64,7 @@ func buscarIp(c *cli.Context) {
 } 
 
 
-
+// Criando a funçao buscar servidor 
 func buscarServidor (c *cli.Context) {
 
 	host := c.String("host")
